@@ -1,0 +1,17 @@
+input.onButtonPressed(Button.A, function () {
+    pins.setAudioPin(AnalogPin.P1)
+    music.setVolume(68)
+    music.play(music.tonePlayable(262, music.beat(BeatFraction.Half)), music.PlaybackMode.UntilDone)
+    music.setVolume(123)
+    music.play(music.tonePlayable(262, music.beat(BeatFraction.Half)), music.PlaybackMode.UntilDone)
+    music.setVolume(154)
+    music.play(music.tonePlayable(262, music.beat(BeatFraction.Half)), music.PlaybackMode.UntilDone)
+    music.setVolume(255)
+    music.play(music.tonePlayable(262, music.beat(BeatFraction.Half)), music.PlaybackMode.UntilDone)
+})
+input.onButtonPressed(Button.B, function () {
+    pins.setAudioPin(AnalogPin.P1)
+    music.setVolume(255)
+    music.play(music.tonePlayable(330, music.beat(BeatFraction.Whole)), music.PlaybackMode.UntilDone)
+    music.play(music.stringPlayable("E B C5 A B G A F ", 326), music.PlaybackMode.UntilDone)
+})
